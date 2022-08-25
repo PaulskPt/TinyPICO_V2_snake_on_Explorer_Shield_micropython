@@ -127,7 +127,7 @@ def setup():
         
 def rd_logo():
     f = None
-    fn = 'tinyPICO_logo_240x240.bmp'
+    fn = 'um_logo_240x240.bmp' # tinyPICO_logo_240x240.bmp'
     try:
         f=open(fn, 'rb')
     except OSError as exc:
