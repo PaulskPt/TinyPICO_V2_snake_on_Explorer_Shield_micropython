@@ -769,7 +769,7 @@ def main():
     t2 = "SHIELD      "
     t3 = "ESP32 INSIDE"
     setup()
-    tft.invertcolor(1)
+    tft.invertcolor(0)
     """
        As long as I am not capable to display the bitmap icon_tinyPICO,
        we will load a TinyPICO logo from a .bmp file.
@@ -793,6 +793,8 @@ def main():
         fbuf.blit(fbuf, 0, 0)
         tft.image( 0,0, disp_width, disp_height, fbuf )
     time.sleep(5)
+    tft.invertcolor(1)
+    tft.fill(TFT.BLACK)
     tft._setwindowloc((0,0), (disp_width, disp_height)) # restore the window
     clr_fbuf()
     tft.fill(TFT.BLACK)
