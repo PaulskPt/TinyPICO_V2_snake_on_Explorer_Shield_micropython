@@ -1,6 +1,21 @@
 MIT License
 
-Copyright (c) 2022 Paulus H.J. Schulinck
+Copyright (c) 2022 Paulus H.J. Schulinck (Github @PaulskPt)
+
+ST7789.py driver originally for Sainsmart 1.8" TFT display ST7789
+ Translated by Guy Carver from the ST7789 sample code.
+ Modified for micropython-esp32 by boochow
+ Modified by Paulus Schulinck to port it for use with Unexpected Maker Explorer Shield with 
+ Unexpected Maker TinyPICO V2 (MicroPython v1.19.1)
+ 
+mpr121.py driver Copyright (c) 2018 Mike Causer
+
+snake.py, Snake class. Original copyright unknown
+
+tinypico_helper.py  = TinyPICO MicroPython Helper Library
+(c) 2019 Seon Rozenblum, Matt Trentini
+
+tinyPICO_logo (c) 20?? Seon Rozenblum (Unexpected Maker) TinyPICO campaign
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

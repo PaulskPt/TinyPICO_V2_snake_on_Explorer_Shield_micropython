@@ -1,0 +1,52 @@
+
+2022-08-25 REPL output
+Thonny app
+Platform: Unexpected Maker TinyPICO Explorer Shield with 
+          Unexpected Maker TinyPICO V2 (fw: MicroPython v1.19.1)
+
+
+>>> ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 188777542, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:4780
+ho 0 tail 12 room 4
+load:0x40078000,len:13492
+load:0x40080400,len:4776
+entry 0x40080694
+Press button 2 to start new game or Y to end
+Press button 2 to start new game or Y to end
+Press button 2 to start new game or Y to end
+snake ate a fruit !!!
+Your score= 1
+snake ate a fruit !!!
+Your score= 2
+snake ate a fruit !!!
+Your score= 3
+snake ate a fruit !!!
+Your score= 4
+snake ate a fruit !!!
+Your score= 5
+snake ate a fruit !!!
+Your score= 6
+snake ate a fruit !!!
+Your score= 7
+snake ate a fruit !!!
+Your score= 8
+snake ate a fruit !!!
+Your score= 9
+snake ate a fruit !!!
+Your score= 10
+snake ate a fruit !!!
+Your score= 11
+GAME OVER
+Press button 2 to start new game or Y to end
+Press button 2 to start new game or Y to end
+Press button 2 to start new game or Y to end
+Press button 2 to start new game or Y to end
+Press button 2 to start new game or Y to end
+Ending game...
+MicroPython v1.19.1 on 2022-06-18; TinyPICO with ESP32-PICO-D4
+Type "help()" for more information.
