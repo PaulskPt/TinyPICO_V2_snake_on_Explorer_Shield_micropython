@@ -125,15 +125,28 @@ def setup():
     if my_debug:
         print("Size received from TFT: width = {}, height = {}".format(tft.size()[vert], tft.size()[hori]))
         
+logo_nr = 1
 def rd_logo():
+    global logo_nr
     f = None
-    fn = 'um_logo_240x240.bmp' # tinyPICO_logo_240x240.bmp'
+    fn1 = 'tinyPICO_logo_240x240_v4.bmp'
+    fn2 = 'um_logo_240x240.bmp'
+
+    if logo_nr == 1:
+        fn = fn1
+    else:
+        fn = fn2
+
+    tft.invertcolor(0)
     try:
         f=open(fn, 'rb')
     except OSError as exc:
         if exc.args[0] == 2:
             print("file \"{}\" not found".format(fn))
             return
+    logo_nr += 1
+    if logo_nr > 2:
+        logo_nr = 1
 
     if f.read(2) == b'BM':  #header
         dummy = f.read(8) #file size(4), creator bytes(4)
@@ -867,6 +880,7 @@ def main():
                         Stop = True
                         break
                     if not (btn == 2):
+                        rd_logo()
                         print(s)
                         time.sleep(1)
                     else:
