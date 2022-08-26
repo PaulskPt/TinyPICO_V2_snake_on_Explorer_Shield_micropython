@@ -130,12 +130,15 @@ def rd_logo():
     global logo_nr
     f = None
     fn1 = 'tinyPICO_logo_240x240_v4.bmp'
-    fn2 = 'um_logo_240x240.bmp'
+    fn2 = 'touch_the_2.bmp'
+    fn3 = 'um_logo_240x240.bmp'
 
     if logo_nr == 1:
         fn = fn1
-    else:
+    elif logo_nr == 2:
         fn = fn2
+    else:
+        fn = fn3
 
     tft.invertcolor(0)
     try:
@@ -145,7 +148,7 @@ def rd_logo():
             print("file \"{}\" not found".format(fn))
             return
     logo_nr += 1
-    if logo_nr > 2:
+    if logo_nr > 3:
         logo_nr = 1
 
     if f.read(2) == b'BM':  #header
